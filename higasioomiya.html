@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>東大宮絵画教室</title>
+  <style>
+    /* 基本スタイル */
+    :root{
+      --oomoji:9vh;
+      --komoji:5vh;
+    }
+    body {
+      font-family: Yu Mincho;
+      line-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-size: 4vh;
+    }
+    .waku{
+      margin: 10vh;
+      border: 1vh double black;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 10px;
+    }
+    .sab{
+        padding: 0 10vw;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .section {
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+    <div class="waku">
+          <!-- ヘッダー -->
+        <header>
+            <h1 class="highlight" style="font-size: var(--oomoji);"><span style="color:blue;">東大宮</span><span style="color: green;">絵画</span><span style="color: red;">教室</span></h1>
+        </header>
+        <div class="sab">
+            <h2>PM1:00~4:00</h2>
+            <h2>毎週<span style="color: red;">日曜日</span></h2>
+            <h2 style="font-size: var(--oomoji);">東大宮6丁目自治会館2階</h2>
+            <h2 style="font-size: var(--komoji);">埼玉県さいたま市見沼区東大宮6丁目27番14号</h2>
+            <h2 style="color: red;">TEL 080-3431-1869</h2>
+            <h2 style="color: blue;">メール kawano50@outlook.jp</h2>
+        </div>
+    </div>
+
+
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- 絵の横に文章 -->
+    <section style="display: flex; align-items: center; gap: 10px;">
+      <img src="umi.jpg" alt="小さい画像" style="width: 80vh;">
+      <div class="text">
+        <h2>fukushima</h2>
+        <h2>(海の叫び)</h2>
+    </div>
+    </section>
+
+    <!-- 項目ごとに情報をまとめた部分 -->
+    <section class="section">
+        <h1><span style="color: red;">(受講料)</span><span style="color: blue; font-size: var(--komoji);">1回1000円の1セット4000円にて販売</span></h1>
+        <h1><span style="color: red;">(特典)</span><span style="color: blue; font-size: var(--komoji);">全日本学生美術展入選3回で特待生として受講料無料</span></h1>
+        <h1><span style="color: red;">(ポイント制で還元)</span><span style="font-size: var(--komoji);">1ポイント1円で200ポイントまで</span></h1>
+    </section>
+
+    <!-- 地図 -->
+    <div class="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3229.812961126492!2d139.64526087579978!3d35.95154517250121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5Z-8546J55yM44GV44GE44Gf44G-5biC6KaL5rK85Yy65p2x5aSn5a6uNuS4geebrjI355WqMTTlj7co6Ieq5rK75Lya6aSo5YaFMumajik!5e0!3m2!1sja!2sjp!4v1732178512886!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    </div>
+  </main>
+</body>
+</html>
